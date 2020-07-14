@@ -123,6 +123,7 @@ jobs:
         - sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran libogdi4.1 libgdal20 libogdi-dev libgdal-dev g++
         - sudo apt-get install llvm-8
         - export LLVM_CONFIG="/usr/bin/llvm-config-8"
+        - conda install -c conda-forge pytest-xdist
         - python3.7 -m pip install fastparquet
         - python3.7 setup.py install
         #- cp /home/travis/miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite/binding/libllvmlite.so  /home/travis/miniconda/envs/test-environment/lib/python3.7/site-packages/llvmlite-0.31.0-py3.7.egg/llvmlite/binding/
