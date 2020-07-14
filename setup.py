@@ -31,6 +31,7 @@ examples = [
     'distributed', # dask
     'holoviews >=1.10.0',
     'scikit-image',
+    'pytest-xdist',
     'matplotlib',
 ]
 
@@ -39,6 +40,7 @@ extras_require = {
         'pytest >=3.9.3',
         'pytest-benchmark >=3.0.0',
         'pytest-cov',
+        'pytest-xdist',
         'codecov',
         'flake8',
         'nbsmoke[all] >=0.4.0',
